@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ListenerRun]">
+  <listeners>
+    <listener class-name="CustomListener.ListenerInSelenium"/>
+  </listeners>
+  <test thread-count="5" name="LoginTest(failed)">
+    <classes>
+      <class name="testCustomListener.TestLogin">
+        <methods>
+          <include name="setUp"/>
+          <include name="testEventListener"/>
+        </methods>
+      </class> <!-- testCustomListener.TestLogin -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [ListenerRun] -->
